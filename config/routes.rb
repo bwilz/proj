@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
-  get 'pages/user'
+  get 'user' => 'pages#user'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
