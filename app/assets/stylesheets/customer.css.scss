@@ -1,0 +1,58 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    background-image: url("blue.png");
+    background-repeat: no-repeat;
+    padding-top: 65px;
+}
+.master {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.headline {
+    clear: both;
+    display: block;
+    text-align: center;
+    z-index: 2;
+}
+.grass {
+    clear: both;
+    display: block;
+    float: none;
+    height: 512px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: -20px;
+    width: 904px;
+    z-index: 1;
+}
+section {
+    overflow: auto;
+}
+textarea {
+    resize: vertical;
+}
+.navbar-nav {
+    background-color: #f47f49;
+    text-align: center;
+    width: 100%;
+}
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
+.navbar-fixed-top {
+    background-color: #f47f49;
+    border-bottom-width: 8px;
+    border-color: white;
+}
+.nav.navbar-nav li a {
+    color: white;
+    text-transform: uppercase;
+}
+.nav.navbar-nav li a:active {
+    color: grey;
+}
