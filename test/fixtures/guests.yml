@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  additional: MyString
+  wedding: false
+  party: false
+
+two:
+  name: MyString
+  additional: MyString
+  wedding: false
+  party: false

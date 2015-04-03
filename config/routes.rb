@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  
+  root 'pages#home'
+  
+  get 'rsvp' => 'guests#new'
+
   get 'users/new'
 
-  root 'pages#home'
+
 
   get 'signup' => 'users#new'
 
