@@ -12,7 +12,8 @@ class GuestsController < ApplicationController
 def create
   @guest = Guest.new(guest_params)
   if @guest.save
-      # Handle a successful save.
+          flash[:success] = "Thank you for your RSVP!"
+    redirect_to :back
     else
       render 'new'
     end

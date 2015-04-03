@@ -3,16 +3,15 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for :guest do |f| %>
+    <%= form_for @guest do |f| %>
     <%= render 'shared/error_messages' %>    
     
       <%= f.label :name %>
-      <%= f.text_field :name %>
       <%= f.text_field :name, class: 'form-control' %>
 
 
     <%= f.label "Additional Guests" %>
-    <%= f.text_area :additional, :cols => 20, :rows => 5 %>
+    <%= f.text_area :additional, class: 'form-control', :cols => 20, :rows => 5 %>
 
     <%= check_box_tag(:wedding) %>
     <%= label_tag(:wedding, "I Will be attending the Ceremony") %>
