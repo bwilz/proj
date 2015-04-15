@@ -13,10 +13,15 @@
     <%= f.label "Additional Guests" %>
     <%= f.text_area :additional, class: 'form-control', :cols => 20, :rows => 5 %>
 
+    <%= f.label :wedding, class: "checkbox inline" do %>
     <%= check_box_tag(:wedding) %>
-    <%= label_tag(:wedding, "I Will be attending the Ceremony") %>
+    <span> I will be attending the Ceremony </span>
+    <%end%>
+    
+    <%= f.label :party, class: "checkbox inline" do %>
     <%= check_box_tag(:party) %>
-    <%= label_tag(:party, "I Will be attending the Reception") %>
+    <span> I will be attending the Reception </span>
+    <%end%>
 
     <%= f.submit "See you there", class: "btn btn-primary" %>
     
