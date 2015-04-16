@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
 
 
-  resources :guests
+  resources :guests, :users
 end
