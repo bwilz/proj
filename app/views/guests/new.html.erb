@@ -14,12 +14,12 @@
     <%= f.text_area :additional, class: 'form-control', :cols => 20, :rows => 5 %>
 
     <%= f.label :wedding, class: "checkbox inline" do %>
-    <%= check_box_tag(:wedding) %>
+    <%= f.check_box(:wedding) %>
     <span> I will be attending the Ceremony </span>
     <%end%>
     
     <%= f.label :party, class: "checkbox inline" do %>
-    <%= check_box_tag(:party) %>
+    <%= f.check_box(:party) %>
     <span> I will be attending the Reception </span>
     <%end%>
 
