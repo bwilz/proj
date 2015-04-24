@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  skip_before_filter :verify_authenticity_token, :only => :destroy
+  
   def new
   end
   
@@ -16,6 +18,8 @@ class SessionsController < ApplicationController
   end
   
   def destroy
+    log_out
+    redirect_to root_url
   end
   
 end
