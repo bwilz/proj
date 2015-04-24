@@ -58,6 +58,15 @@ textarea {
     text-align: center;
     width: 100%;
 }
+
+.navbar-nav li:hover {
+  background-color: black;
+}
+
+.navbar-nav li:active {
+  background-color: black;
+}
+
 .navbar-nav > li {
     display: inline-block;
     float: none;
@@ -73,6 +82,10 @@ textarea {
 }
 .nav.navbar-nav li a:active {
     color: grey;
+}
+
+.dropdown-menu {
+  background-color: #f47f49;
 }
 
 /* forms */
