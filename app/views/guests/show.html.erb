@@ -1,13 +1,11 @@
 <% provide(:title, "RSVP'd Guests") %>
 <h1>RSVP'd Guests</h1>
-<%= @user.name %>, <%= @user.email %>
-
 
 <ul class="guests">
   <li>Name</li><li>Additional Guests</li><li>Addending Wedding</li><li>Attending Reception</li>
   <% @guests.each do |guest| %>
   <li>
-   <%= guest.name guest.additional guest.wedding guest.party %>
+    <%= guest.name, guest.additional, guest.wedding, guest.party %>
   </li>
   <% end %>
 </ul>

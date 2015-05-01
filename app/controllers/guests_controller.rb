@@ -8,6 +8,10 @@ class GuestsController < ApplicationController
       @guest = Guest.find(params[:id])
   end
 
+  def index
+    @guest = Guest.all
+    render 'show'
+  end
 
 def create
   @guest = Guest.new(guest_params)
@@ -23,7 +27,7 @@ def create
 
   def guest_params
     params.require(:guest).permit(:name, :additional, :wedding,
-                                   :party)
+      :party,:admin_id)
     end
   
 end

@@ -4,11 +4,13 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   
+  get 'day' => 'pages#day'
+  
   get 'rsvp' => 'guests#new'
 
   get 'users/new'
 
-
+  get 'guest/show'
 
   get 'signup' => 'users#new'
   

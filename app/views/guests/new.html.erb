@@ -22,6 +22,8 @@
     <%= f.check_box(:party) %>
     <span> I will be attending the Reception </span>
     <%end%>
+    
+    <%= f.hidden_field :admin_id, :value => 1 %>
 
     <%= f.submit "See you there", class: "btn btn-primary" %>
     

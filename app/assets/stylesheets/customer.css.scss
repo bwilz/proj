@@ -17,7 +17,7 @@
   @include box_sizing;
 }
 
-body {
+.one {
     background-image: url("/images/blue.png");
     background-repeat: no-repeat;
     padding-top: 65px;
@@ -121,6 +121,16 @@ input {
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
+  }
+}
+
+.guests {
+  list-style:none;
+  margin:0;
+  li {
+    overflow:auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
   }
 }
 

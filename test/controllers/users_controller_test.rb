@@ -5,5 +5,8 @@ class UsersControllerTest < ActionController::TestCase
     get :new
     assert_response :success
   end
+  
+
+  
 
 end
