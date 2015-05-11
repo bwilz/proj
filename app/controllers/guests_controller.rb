@@ -17,7 +17,7 @@ def create
   @guest = Guest.new(guest_params)
   if @guest.save
           flash[:success] = "Thank you for your RSVP!"
-    redirect_to :back
+    redirect_to '/'
     else
       render 'new'
     end
