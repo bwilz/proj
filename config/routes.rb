@@ -20,4 +20,5 @@ Rails.application.routes.draw do
 
 
   resources :guests, :users
+  resources :account_activations, only: [:edit]
 end
