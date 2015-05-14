@@ -77,7 +77,7 @@ textarea {
 }
 .navbar-fixed-top {
     background-color: #f47f49;
-    border-bottom-width: 8px;
+    border-bottom-width: 5px;
     border-color: white;
 }
 .nav.navbar-nav li a {
@@ -97,20 +97,26 @@ textarea {
   text-align:center;
   width:83%;
   margin-top: 15px;
-  /*border: 2px solid black;*/
+  border: 2px solid black;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px
+  margin-bottom: 60px;
+  padding-right: 1em;
 }
+
 
 .bride {
   border-right:1px solid $gray-lighter;
   width:40%;
-  padding:1em;
+  text-align:left;
 }
 .groom {
   width: 40%;
-  
+  text-align:left;
+}
+
+.gimg {
+  text-align:right;
 }
 
 .bimg, .gimg {
@@ -118,6 +124,14 @@ textarea {
   display:block;
   margin-top: 1em;
   margin-bottom:1em;
+}
+
+.bgtxt {
+  
+}
+
+h2 {
+  text-align:center;
 }
 
 .blueline {
