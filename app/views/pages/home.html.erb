@@ -2,4 +2,54 @@
 <% provide(:b, "one")%>
 <a class="headline"><%= image_tag("headlineblock.png", alt: "headline")  %></a>
 <a class="grass"><%= image_tag("grass.png", alt: "us in some grass") %></a>
+<a class="headline"><%= image_tag("h1.png", alt: "headline")  %></a>
+<table class="bgtable">
+  <tr><td class="bride">
+    <h2>The Bride</h2><a class="bimg">
+    <%= image_tag("kassandra.jpg", alt: "Beautiful Kassandra") %>
+    </a>This is some very important information about the bride that everyone should know.
+    <hr class="blueline"/><span class="qts">"</span> IThis is a fun quote that she said <span class="qts">"</span>
+    <hr class="blueline"/></td>
+    
+  <td class="groom"><h2>The Groom</h2>
+    <a class="gimg"><%= image_tag("ben.jpg", alt: "Handsom man") %>
+    </a>the groom, is old. Hates it when kids play in his lawn and skateboard on the damn sidewalks.
+    <hr class="blueline"/><span class="qts">"</span> ...HUH?...WAT? <span class="qts">"</span>
+    <hr class="blueline"/></td></tr>
+</table>
+
+<table class="story">
+  <tr>
+    <td class="strimg sthead" colspan="3">The Promise
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td class="strimg" colspan="3"><%= image_tag("story1.jpg", alt: "mountains") %>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td class="strimg"><%= image_tag("story2.jpg", alt: "clingmans dome") %>
+    </td>
+    <td class="strimg" colspan="2"><%= image_tag("story3.jpg", alt: "trees and mountains") %>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td class="strimg" colspan="3"><%= image_tag("story4.jpg", alt: "ring finger") %>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
 

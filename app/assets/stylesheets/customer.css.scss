@@ -91,15 +91,16 @@ textarea {
 .dropdown-menu {
   background-color: #f47f49;
 }
-/*bg page*/
+/*story page*/
 
 .bgtable {
   text-align:center;
-  width:80%;
+  width:83%;
   margin-top: 15px;
-  border: 2px solid black;
+  //border: 2px solid black;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px
 }
 
 .bride {
@@ -126,10 +127,42 @@ textarea {
   color:#98d9e9;
   margin-left:auto;
   margin-right:auto;
+
 }
 
 .qts {
   font-weight:bold;
+  text-align:center;
+}
+
+.story {
+  text-align:center;
+  width:80%;
+ //  border: 2px solid black;
+  margin-right:auto;
+  margin-left:auto;
+  
+}
+
+.strimg {
+    text-align:center;
+    margin: 1em;
+    border-bottom: 5px solid transparent;
+    border-right: 2px solid transparent;
+    border-left: 1px solid transparent;
+  
+}
+
+/*big day*/
+
+.bdtble {
+  text-align:center;
+  width:83%;
+  margin-top: 15px;
+  //border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px
 }
 
 /* forms */
