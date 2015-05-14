@@ -10,7 +10,13 @@ Rails.application.routes.draw do
   
   get 'day' => 'pages#day'
   
+  get 'lodge' => 'pages#lodging'
+  
+  get 'party' => 'pages#party'
+  
   get 'rsvp' => 'guests#new'
+  
+  get 'gift' => 'pages#gifts'
 
   get 'users/new'
 

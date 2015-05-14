@@ -4,9 +4,9 @@
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Our Story",   root_path %></li>
             <li><%= link_to "The Big Day",   day_path %></li>
-            <li><%= link_to "Lodging", '#' %></li>
-            <li><%= link_to "Gifts", '#' %></li>
-            <li><%= link_to "Wedding Party", '#' %></li>
+            <li><%= link_to "Lodging", lodge_path %></li>
+            <li><%= link_to "Registry", gift_path %></li>
+            <li><%= link_to "Wedding Party", party_path %></li>
             <li><%= link_to "RSVP", rsvp_path %></li>
             <li><%= link_to "Sign Up", signup_path %></li>
             <% if logged_in? %>
@@ -15,7 +15,7 @@
                 Account <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Settings", current_user %></li>
+                <li><%= link_to "View Guests", current_user %></li>
                 <li class="divider"></li>
                 <li>
                   <%= link_to "Sign out", logout_path, method: "delete" %>
