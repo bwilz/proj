@@ -2,3 +2,183 @@
 <% provide(:b, "five")%>
 <a class="headline"><%= image_tag("ourfriends.png", alt: "Our wedding party")  %></a>
 
+<div id="carousel-generic" class="carousel slide" data-ride="carousel" data-interval="0">
+  <!-- Indicators -->
+ <!-- <ol class="carousel-indicators">
+    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-generic" data-slide-to="2"></li>
+  </ol> -->
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="pthead">Cassandra Clark</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="pthead">Thomas Wilz</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+      <%= image_tag("friends1.jpg", alt: "Cassandra Clark")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+       <%= image_tag("friends2.jpg", alt: "Thomas Wilz")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Some say she is a professional maid of honor. While this may or may not be true, she is very much my dearest and best friend.</p>
+        </td>
+        <td>
+       <p class="rcaption">Thomas has always been like a brother to me. He is my best man and my brother.</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="pthead">Megan Thome</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="pthead">Shea Curry</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("megan.jpg", alt: "Megan Thome")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("shea.jpg", alt: "Sheaftain Curry")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Some say that she only eats oranges when it's cold outside, and that she once saved a french mime from choking on a television remote control. All we know is that she's Megan!</p>
+        </td>
+        <td>
+       <p class="rcaption">What can be said about this man..</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="pthead">Amanda Knoll</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="pthead">Jason Hermes</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("amandak.jpg", alt: "Amanda Knoll")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("jason.jpg", alt: "Json")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Words</p>
+        </td>
+        <td>
+       <p class="rcaption">Har Har</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="pthead">Jessica Robotka</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="pthead">Henery Henkel</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("jessie.jpg", alt: "Sistah Jessie")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("henry.jpg", alt: "the who?")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Words</p>
+        </td>
+        <td>
+       <p class="rcaption">Har Har</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="pthead">Amanda Buchholz</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="pthead">Clarence Mcgivens</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("amandasaige.jpg", alt: "those two")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("mcgivens.jpg", alt: "clarence")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Words</p>
+        </td>
+        <td>
+       <p class="rcaption">Har Har</p>
+        </td>
+        </tr>
+      </table>
+    </div>    
+    
+
+    
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+    <%= image_tag("button.png", :class => "marrow icon-prev", alt: "reverse arrow")  %>
+  </a>
+  <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+    <%= image_tag("button.png", :class => "arrow icon-next", alt: "arrow")  %>
+  </a>
+</div> <!-- Carousel -->
+
