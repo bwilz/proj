@@ -4,18 +4,39 @@
 <a class="grass"><%= image_tag("grass.png", alt: "us in some grass") %></a>
 <a class="headline"><%= image_tag("h1.png", alt: "headline")  %></a>
 <table class="bgtable">
-  <tr><td class="bride">
-    <h2>The Bride</h2><a class="bimg">
-    <%= image_tag("kassandra.jpg", alt: "Beautiful Kassandra") %>
-    </a ><p class="bgtxt">This is some very important information about the bride that everyone should know.</p>
+  <tr>
+    <td>
+    <h2>The Bride</h2>
+    </td>
+    <td class="groom"><h2>The Groom</h2> 
+    </td>
+  </tr>
+  <tr>
+   <td>
+    <%= image_tag("kassandra.jpg", :class => "bimg", alt: "Beautiful Kassandra") %>
+    </td>
+    <td>
+    <%= image_tag("ben.jpg", :class => "gimg", alt: "Handsom man") %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <p class="btxt">This is some very important information about the bride that everyone should know.</p>
+    </td>
+    <td>
+    <p class="gtxt">the groom, is old. Hates it when kids play in his lawn and skateboard on the damn sidewalks.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
     <hr class="blueline"/><span class="qts">"</span> IThis is a fun quote that she said <span class="qts">"</span>
-    <hr class="blueline"/></td>
-    
-  <td class="groom"><h2>The Groom</h2>
-    <a class="gimg"><%= image_tag("ben.jpg", alt: "Handsom man") %>
-    </a><p class="bgtxt">the groom, is old. Hates it when kids play in his lawn and skateboard on the damn sidewalks.</p>
+    <hr class="blueline"/>
+    </td>
+    <td>   
     <hr class="blueline"/><span class="qts">"</span> ...HUH?...WAT? <span class="qts">"</span>
-    <hr class="blueline"/></td></tr>
+    <hr class="blueline"/>
+    </td>
+  </tr>
 </table>
 
 <table class="story">

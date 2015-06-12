@@ -95,13 +95,13 @@ textarea {
 
 .bgtable {
   text-align:center;
-  width:83%;
+  margin-left:auto;
+  margin-right:auto;
   margin-top: 15px;
-  //border: 2px solid black;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 60px;
   padding-right: 1em;
+  width:83%;
+  border:black solid 2px;
 }
 
 
@@ -117,23 +117,29 @@ textarea {
 
 .bimg {
     width:374px;
+    margin-right:3em;
+    text-align:center;
 }
 
 .gimg {
   width:369px;
-  text-align:right;
+  text-align:center;
+  margin-left:3em;
 }
 
-.bimg, .gimg {
-  clear:both;
-  display:block;
-  margin-top: 1em;
-  margin-bottom:1em;
+
+.btxt {
+  width:374px;
+  text-align:left;
+  margin-right:3em;
 }
 
-.bgtxt {
+.gtxt {
   width:369px;
+  text-align: left;
+  margin-left:3em;
 }
+
 
 h2 {
   text-align:center;
@@ -231,18 +237,25 @@ h2 {
 }
 
 .lcaption {
+  
   width:374px;
   text-align:left;
   margin-right:3em;
+
 }
 
 .rcaption {
   width:369px;
   text-align:left;
   margin-left: 3em; 
+  padding-top: 0px;
+  margin-top:0px;
+
 }
 
-
+td {
+  vertical-align:top;
+}
 	
 .carousel-control {
   background: none !important;
@@ -251,21 +264,26 @@ h2 {
 }
 
 .arrow {
-  width:91px !important;
-  height:94px !important;
+  width:61px !important;
+  height:64px !important;
+  top: 190px !important;
+  position:absolute;
+  text-align:right;
   
 }
 
 .marrow {
-    -webkit-transform: scale(-1, 1);
-     -khtml-transform: scale(-1, 1);
-       -moz-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-         -o-transform: scale(-1, 1);
-            transform: scale(-1, 1);
+  width:61px !important;
+  height:64px !important;
+  top: 190px !important;
+  position:absolute;
+  text-align:left;
+  
 }
 
-
+.carousel {
+  
+}
 
 /* forms */
 
