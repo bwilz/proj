@@ -7,6 +7,50 @@
   box-sizing:         border-box;
 }
 
+@font-face {
+  font-family:'AngelicaProText';
+  src:font-url('AngelicaProText-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;  
+}
+
+@font-face {
+  font-family:'AngelicaProText-Italic';
+  src:font-url('AngelicaProText-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family:'AngelicaProText-SemiBold';
+  src:font-url('AngelicaProText-SemiBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'BebasNeue';
+  src:font-url('BebasNeue.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'BebasNeue-Bold';
+  src:font-url('BebasNeue-Bold.otf') format('opentype');
+  font-weight: Bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'BebasNeue-Regular';
+  src:font-url('BebasNeue-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 /* miscellaneous */
 
 .debug_dump {
@@ -21,8 +65,9 @@
     background-image: url("/images/blue.png");
     background-repeat: no-repeat;
     padding-top: 65px;
+    background-size:100%;
 }
-.master {
+.master { 
     display: block;
     position: relative;
     text-align: center;
@@ -81,11 +126,27 @@ textarea {
     border-color: white;
 }
 .nav.navbar-nav li a {
+    font-family: "BebasNeue-Regular";
+    letter-spacing:.12em;
+    font-size: 1.25em;
     color: white;
     text-transform: uppercase;
 }
 .nav.navbar-nav li a:active {
     color: #e0e0e0
+}
+
+.btn-primary {
+  border: 0;
+  background-color: #f47f49;
+  
+}
+
+.btn-primary:hover {
+  background-color: #e2713d;
+}
+.btn-primary:active {
+  background-color: #e2713d;
 }
 
 .dropdown-menu {
@@ -97,34 +158,63 @@ textarea {
   text-align:center;
   margin-left:auto;
   margin-right:auto;
-  margin-top: 15px;
+  width:83%;
   margin-bottom: 60px;
+ /* text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 15px;
+
   padding-right: 1em;
   width:83%;
-  border:black solid 2px;
+  border:black solid 2px; */
 }
 
+.bord {
+  border-right:solid 1px #B0B0B0;
+}
 
 .bride {
+  font-family: "BebasNeue-Regular";
+  text-align:center;
+  margin-right:20%;
+  letter-spacing:.12em;
+  /*
   border-right:1px solid $gray-lighter;
   width:40%;
   text-align:left;
+  */
 }
 .groom {
+  font-family: "BebasNeue-Regular";
+  text-align:center;
+  margin-left:20%;
+  letter-spacing: .12em;
+  /*
   width: 40%;
-  text-align:left;
+  text-align:left; */
 }
 
 .bimg {
+   width:374px;
+   text-align:center;
+   margin-right:3em;
+   float:left;
+  /*
     width:374px;
     margin-right:3em;
-    text-align:center;
+    text-align:center; */
 }
 
 .gimg {
+    width:369px;
+    text-align:center;
+    margin-left: 3em;
+    float:right;
+  /*
   width:369px;
   text-align:center;
-  margin-left:3em;
+  margin-left:3em; */
 }
 
 
@@ -132,12 +222,28 @@ textarea {
   width:374px;
   text-align:left;
   margin-right:3em;
+  font-family: "AngelicaProText-Regular";
+  padding-top: 2em;
+  font-size: 1.2em;
+  /*
+  width:374px;
+  text-align:left;
+  margin-right:3em; */
 }
 
 .gtxt {
   width:369px;
+  text-align:left;
+  margin-left: 3em; 
+  padding-top: 2em;
+  margin-top:0px;
+  float: right;
+  font-family: "AngelicaProText-Regular";
+  font-size: 1.2em;
+  /*
+  width:369px;
   text-align: left;
-  margin-left:3em;
+  margin-left:3em; */
 }
 
 
@@ -145,20 +251,51 @@ h2 {
   text-align:center;
 }
 
-.blueline {
+.lblueline {
+  border-top:solid 1px #98d9e9;
+  border-bottom:solid 1px #98d9e9;
   width:45%;
   background-color: #98d9e9;
   border-color: 1px #98d9e9;
   color:#98d9e9;
-  margin-left:auto;
-  margin-right:auto;
+  margin-right:35%;
 
+}
+
+.rblueline {
+  border-top:solid 1px #98d9e9;
+  border-bottom:solid 1px #98d9e9;
+  width:45%;
+  background-color: #98d9e9;
+  border-color: 1px #98d9e9;
+  color:#98d9e9;
+  margin-left:35%;
 }
 
 .qts {
   font-weight:bold;
-  text-align:center;
+  font-family: "BebasNeue-Bold";
+  font-weight: bold;
+  font-size:3em;
+  color:#B0B0B0;
 }
+
+.bqts {
+  font-family: "BebasNeue-Bold";
+  width:374px;
+  margin-right:20%;
+  font-size:1.4em;
+  text-transform: uppercase;  
+}
+
+.gqts {
+  font-family: "BebasNeue-Bold";
+  margin-left:20%;
+  width:369px;
+  font-size:1.4em;
+  text-transform: uppercase;
+}
+
 
 .story {
   text-align:center;
@@ -167,6 +304,11 @@ h2 {
   margin-right:auto;
   margin-left:auto;
   
+}
+
+.sthead {
+    font-family: "BebasNeue-Regular";
+    letter-spacing: .12em;
 }
 
 .strimg {
@@ -187,10 +329,90 @@ h2 {
   /*border: 2px solid black;*/
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px
+  margin-bottom: 60px;
 }
 
+
+.bdimg:hover {
+  opacity: .7;
+  transition: all 1s;
+}
+
+.cimg {
+   width:374px;
+   text-align:left;
+   margin-right:3em;
+  float:left;  
+}
+
+.rimg {
+   width:369px;
+   text-align:right;
+   margin-left:3em;
+  float:right;  
+}
+
+
+.chead {
+   font-family: "BebasNeue-Regular";
+   letter-spacing: .12em;
+   padding-right:5em;
+}
+
+.rhead {
+    font-family: "BebasNeue-Regular";
+    letter-spacing: .12em;  
+    padding-left:5em;
+}
+
+.op {
+  font-family: "AngelicaProText-Bold";
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-top:1.25em;
+  padding-right:5em;
+}
+
+.ba {
+  font-family: "AngelicaProText-Bold";
+  font-weight:bold;
+  font-size: 1.2em;
+  padding-top:1.25em;
+  padding-left:5em;
+}
+
+.cinfo {
+    font-family: "AngelicaProText-Regular";
+    font-size: 1.2em;
+  padding-right:5em;
+}
+
+.rinfo {
+    font-family: "AngelicaProText-Regular";
+    font-size: 1.2em;
+  padding-left:5em;
+}
+
+.rain {
+  padding-top:2em;
+  font-family: "AngelicaProText-Bold";
+  font-weight:bold;
+  text-align:center;
+}
 /*lodging*/
+
+.lgtxt {
+  font-family: "AngelicaProText-Regular"; 
+  text-align:center;
+  font-size: 1.25em;
+  padding-bottom: 1.5em;
+  padding-top: 2em;
+}
+
+.blk {
+  font-family: "AngelicaProText-Italic";
+  font-style: italic;
+}
 
 .lgtble {
   text-align:center;
@@ -199,7 +421,54 @@ h2 {
   /*border: 2px solid black; */
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px
+  margin-bottom: 60px;
+}
+
+
+.lgimg:hover{
+  opacity: .7;
+  transition: all 1s;
+}
+
+.llgimg {
+   width:374px;
+   text-align:left;
+   margin-right:3em;
+  float:left;
+
+}
+
+.rlgimg {
+   width:369px;
+   text-align:right;
+   margin-left:3em;
+  float:right;
+}
+
+.llhead {
+    font-family: "BebasNeue-Regular";
+    letter-spacing: .12em;
+    padding-right:5em;
+}
+
+.lrhead {
+    font-family: "BebasNeue-Regular";
+    letter-spacing: .12em;
+    padding-left:5em;
+}
+
+.clinfo {
+  font-family: "AngelicaProText-Regular";
+  padding-top:1.25em;
+  font-size: 1.2em;
+  padding-right: 5em;
+}
+
+.bwinfo {
+  font-family: "AngelicaProText-Regular"; 
+  padding-top:1.25em;
+  font-size: 1.2em;
+  padding-left:5em;
 }
 
 /*gifts*/
@@ -210,13 +479,38 @@ h2 {
   /*border: 2px solid black;*/
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px
+  margin-bottom: 60px;
+
   
+}
+
+.gftxt {
+  font-family: "BebasNeue-Regular"; 
+  padding-bottom:2em;
+  letter-spacing: .12em;
+}
+
+.gfimg:hover {
+  opacity: .7;
+  transition: all 1s;
 }
 
 /*party*/
 
+.phead {
+    font-family: "BebasNeue-Regular";
+    letter-spacing: .12em;
+    margin-right:15%
+}
+
+.thead {
+    font-family: "BebasNeue-Regular";
+    letter-spacing: .12em;
+   margin-left:15%
+}
+
 .pttble {
+  width:83%;
   text-align:center;
   margin-left:auto;
   margin-right:auto;
@@ -241,15 +535,18 @@ h2 {
   width:374px;
   text-align:left;
   margin-right:3em;
+  margin-left:2em;
+  font-family: "AngelicaProText-Regular";  
 
 }
 
 .rcaption {
   width:369px;
   text-align:left;
-  margin-left: 3em; 
+  margin-left: 4.5em; 
   padding-top: 0px;
   margin-top:0px;
+  font-family: "AngelicaProText-Regular";  
 
 }
 
@@ -329,6 +626,13 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+  
+}
+
+.formtxt {
+      font-family: "BebasNeue-Regular";
+      letter-spacing:.12em;
+      font-size: 1em;  
 }
 
 

@@ -4,19 +4,33 @@
 
 <table class="bdtble">
   <tr>
-  <td class="bdimg"><%= image_tag("ceremony.jpg", alt: "Lower ochsner park") %>
+    <td class="chead bord"><h2>Ceremony</h2>
     </td>
-    <td class="bdimg"><%= image_tag("reception.jpg", alt: "baraboo arts center") %>
+    <td class="rhead"><h2>Reception</h2>
+    </td>
+  </tr>  
+  <tr>
+    <td class="bdimg bord"><%= link_to image_tag("ceremony.jpg", :class => "cimg", alt: "Lower ochsner park"), "https://www.google.com/maps/dir//43.4693327,-89.7556158/@43.4709995,-89.7550241,17z/data=!4m2!4m1!3e0", :title => "Click for Google Maps", :target => "_blank" %>
+    </td>
+    <td class="bdimg"><%= link_to image_tag("reception.jpg", :class => "rimg", alt: "baraboo arts center"), "https://www.google.com/maps/dir//Baraboo+Arts/@43.4685845,-89.7518933,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x0:0xbccdd861b6511f60!2m2!1d-89.738868!2d43.467393!3e0", :title => "Click for Google Maps", :target => "_blank" %>
     </td>
   </tr>
   <tr>
-    <td class="bdimg">Ceremony
+    <td class="op bord">Lower Ochsner Park
     </td>
-    <td class="bdimg">Reception
+    <td class="ba">Baraboo Arts Center
     </td>
   </tr>
   <tr>
-    <td class="bdimg">Im the ceremony info
+    <td class="cinfo bord">820 2nd Ave. Baraboo, WI 53913
     </td>
-    <td class="bdimg">Im the wedding info
+    <td class="rinfo">322 Water St. Baraboo, WI 53913
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="rain">* In the event of inclement weather the ceremony will be held at the Baraboo Arts Center
+    </td>
+    <td>
+    </td>
+  </tr>
 </table>

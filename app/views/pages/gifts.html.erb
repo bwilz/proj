@@ -3,14 +3,15 @@
 <a class="headline"><%= image_tag("gifts.png", alt: "where we are registered")  %></a>
 
 <table class="gftble">
-  <td class="gfimg" colspan="2">We are registered at
+  <tr>
+  <td class="gftxt" colspan="2"><h2>We are registered at</h2>
     </td>
-  <td class="gfimg">
+  <td>
     </td>
   </tr>
   <tr>
-    <td class="gfimg"><%= link_to image_tag("Amazon.jpg", alt: "Amazon dot com"), "http://www.amazon.com/gp/registry/wedding/ZA79O72PRSPW" %>
+    <td class="gfimg bord"><%= link_to image_tag("targ2.png", alt: "Target"), "http://www.target.com/gift-registry/giftgiver?registryId=luJMAaGQej3vo4BONKmHlw&registryType=WEDDING", :target => "_blank" %>
     </td>
-    <td class="gfimg"><%= link_to image_tag("targ.png", alt: "Target"), "http://www.target.com/gift-registry/giftgiver?registryId=luJMAaGQej3vo4BONKmHlw&registryType=WEDDING" %>
+    <td class="gfimg"><%= link_to image_tag("Amazon2.jpg", alt: "Amazon dot com"), "http://www.amazon.com/gp/registry/wedding/ZA79O72PRSPW", :target => "_blank" %>
     </td>
   </tr>

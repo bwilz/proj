@@ -7,26 +7,26 @@
     <%= form_for @guest do |f| %>
     <%= render 'shared/error_messages' %>    
     
-      <%= f.label :name %>
+      <%= f.label :name, class: 'formtxt' %>
       <%= f.text_field :name, class: 'form-control' %>
 
 
-    <%= f.label "Additional Guests" %>
+    <%= f.label "Additional Guests", class: 'formtxt' %>
     <%= f.text_area :additional, class: 'form-control', :cols => 20, :rows => 5 %>
 
-    <%= f.label :wedding, class: "checkbox inline" do %>
+    <%= f.label :wedding, class: "checkbox inline formtxt" do %>
     <%= f.check_box(:wedding) %>
     <span> I will be attending the Ceremony </span>
     <%end%>
     
-    <%= f.label :party, class: "checkbox inline" do %>
+    <%= f.label :party, class: "checkbox inline formtxt" do %>
     <%= f.check_box(:party) %>
     <span> I will be attending the Reception </span>
     <%end%>
     
     <%= f.hidden_field :admin_id, :value => 1 %>
 
-    <%= f.submit "See you there", class: "btn btn-primary" %>
+    <%= f.submit "See you there", class: "btn btn-primary formtxt" %>
     
     <% end %>
   </div>

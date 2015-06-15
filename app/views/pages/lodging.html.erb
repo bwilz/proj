@@ -3,19 +3,29 @@
 <a class="headline"><%= image_tag("lodging.png", alt: "where to stay")  %></a>
 
 <table class="lgtble">
-  <td class="lgimg"><%= image_tag("clarion.jpg", alt: "clarion baraboo") %>
+
+  <tr>
+    <td class="llhead bord"><h2>Clarion</h2>
     </td>
-  <td class="lgimg"><%= image_tag("bestwestern.jpg", alt: "best western baraboo") %>
+    <td class="lrhead"><h2>Best Western</h2>
+    </td>
+  </tr>  
+  <tr>
+  <td class="lgimg bord"><%= link_to image_tag("clarion.jpg", alt: "clarion baraboo", :class => "llgimg"), "https://www.google.com/maps/place/Clarion+Hotel+and+Convention+Center/@43.476479,-89.768025,17z/data=!3m1!4b1!4m2!3m1!1s0x88076a05ae9a6e6d:0x84d37b2ec84fa78f", :title => "Click for Google Maps", :target => "_blank" %>
+    </td>
+  <td class="lgimg"><%= link_to image_tag("bestwestern.jpg", alt: "best western baraboo", :class => "rlgimg"), "https://www.google.com/maps/place/Best+Western+Baraboo+Inn/@43.477709,-89.769636,17z/data=!3m1!4b1!4m2!3m1!1s0x0000000000000000:0xc2e02337bebe81e4", :title => "Click for Google Maps", :target => "_blank" %>
     </td>
   </tr>
   <tr>
-    <td class="lfimg">Clarion
+    <td class="clinfo bord">626 W Pine St, Baraboo, WI 53913 <br/> 608.356.6422 | <span class="blk">Block closes July fourteenth</span>
     </td>
-    <td class="lfimg">Best Western
-    </td>
+    <td class="bwinfo">725 W Pine St, Baraboo, WI 53913 <br/>608.356.1100 | <span class="blk">Block closes July twenty-fourth</span>
   </tr>
-  <tr>
-    <td class="lfimg">626 W Pine St, Baraboo, WI 53913 <br/> 608.356.6422
+   <tr>
+    <td colspan="2" class="lgtxt">A block of rooms has been set aside at the Clarion & the Best Western under the Gargulak-Wilz wedding.<br/>
     </td>
-    <td class="lfimg">725 W Pine St, Baraboo, WI 53913 <br/>608.356.1100
+    <td>
+    </td>
+  </tr> 
+  
 </table>
