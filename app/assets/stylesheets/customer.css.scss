@@ -401,12 +401,16 @@ h2 {
 }
 /*lodging*/
 
-.lgtxt {
+.lgtxt, .lgtxt2 {
   font-family: "AngelicaProText-Regular"; 
   text-align:center;
   font-size: 1.25em;
   padding-bottom: 1.5em;
   padding-top: 2em;
+}
+
+.lgtxt2 {
+  padding-top: .5em;
 }
 
 .blk {
@@ -635,6 +639,10 @@ input {
       font-size: 1em;  
 }
 
+.wcheckbox {
+  
+}
 
-
-
+.rcheckbox {
+  
+}
