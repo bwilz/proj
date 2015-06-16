@@ -3,12 +3,15 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@pgnate) do |f| %>
-      <%= f.label :pname %>
-      <%= f.text_field :pname %>
+    <%= form_for @pgnate do |f| %>
+    <%= f.label "Page Name", class: 'formtxt' %>
+    <%= f.text_field :pname, class: 'form-control' %>
+    
+    <%= f.label "Page Data", class: 'formtxt' %>
+    <%== f.text_area :content, class: 'form-control', :cols => 20, :rows => 5 %>    
 
 
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <%= f.submit "Add Page", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>

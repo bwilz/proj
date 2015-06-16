@@ -1,5 +1,6 @@
 <% provide(:title, 'Ben and Kassandra') %>
 <% provide(:b, "one")%>
+<a id="story"></a>
 <a class="headline"><%= image_tag("headlineblock.png", alt: "headline")  %></a>
 <a class="grass"><%= image_tag("grass.png", alt: "us in some grass") %></a>
 <a class="headline"><%= image_tag("h1.png", alt: "headline")  %></a>
@@ -44,6 +45,7 @@
   </tr>
 </table>
 
+
 <table class="story">
   <tr>
     <td class="strimg sthead" colspan="3"><h2>The Promise</h2>
@@ -78,4 +80,320 @@
     </td>
   </tr>
 </table>
+
+<a id="day"></a>
+<a class="headline"><%= image_tag("bigday.png", alt: "our big day")  %></a>
+
+<table class="bdtble">
+  <tr>
+    <td class="chead bord"><h2>Ceremony</h2>
+    </td>
+    <td class="rhead"><h2>Reception</h2>
+    </td>
+  </tr>  
+  <tr>
+    <td class="bdimg bord"><%= link_to image_tag("ceremony.jpg", :class => "cimg", alt: "Lower ochsner park"), "https://www.google.com/maps/dir//43.4693327,-89.7556158/@43.4709995,-89.7550241,17z/data=!4m2!4m1!3e0", :title => "Click for Google Maps", :target => "_blank" %>
+    </td>
+    <td class="bdimg"><%= link_to image_tag("reception.jpg", :class => "rimg", alt: "baraboo arts center"), "https://www.google.com/maps/dir//Baraboo+Arts/@43.4685845,-89.7518933,16z/data=!4m9!4m8!1m0!1m5!1m1!1s0x0:0xbccdd861b6511f60!2m2!1d-89.738868!2d43.467393!3e0", :title => "Click for Google Maps", :target => "_blank" %>
+    </td>
+  </tr>
+  <tr>
+    <td class="op bord">Lower Ochsner Park
+    </td>
+    <td class="ba">Baraboo Arts Center
+    </td>
+  </tr>
+  <tr>
+    <td class="cinfo bord">820 2nd Ave. Baraboo, WI 53913
+    </td>
+    <td class="rinfo">322 Water St. Baraboo, WI 53913
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="rain">* In the event of inclement weather the ceremony will be held at the Baraboo Arts Center
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
+
+<a id="lodge"></a>
+<a class="headline"><%= image_tag("lodging.png", alt: "where to stay")  %></a>
+
+<table class="lgtble">
+
+  <tr>
+    <td class="llhead bord"><h2>Clarion</h2>
+    </td>
+    <td class="lrhead"><h2>Best Western</h2>
+    </td>
+  </tr>  
+  <tr>
+  <td class="lgimg bord"><%= link_to image_tag("clarion.jpg", alt: "clarion baraboo", :class => "llgimg"), "https://www.google.com/maps/place/Clarion+Hotel+and+Convention+Center/@43.476479,-89.768025,17z/data=!3m1!4b1!4m2!3m1!1s0x88076a05ae9a6e6d:0x84d37b2ec84fa78f", :title => "Click for Google Maps", :target => "_blank" %>
+    </td>
+  <td class="lgimg"><%= link_to image_tag("bestwestern.jpg", alt: "best western baraboo", :class => "rlgimg"), "https://www.google.com/maps/place/Best+Western+Baraboo+Inn/@43.477709,-89.769636,17z/data=!3m1!4b1!4m2!3m1!1s0x0000000000000000:0xc2e02337bebe81e4", :title => "Click for Google Maps", :target => "_blank" %>
+    </td>
+  </tr>
+  <tr>
+    <td class="clinfo bord">626 W Pine St, Baraboo, WI 53913 <br/> 608.356.6422 | <span class="blk">Block closes July fourteenth</span>
+    </td>
+    <td class="bwinfo">725 W Pine St, Baraboo, WI 53913 <br/>608.356.1100 | <span class="blk">Block closes July twenty-fourth</span>
+  </tr>
+   <tr>
+    <td colspan="2" class="lgtxt">A block of rooms has been set aside at the Clarion & the Best Western under the Gargulak-Wilz wedding.
+    </td>
+    <td>
+    </td>
+  </tr> 
+   <tr>
+    <td colspan="2" class="lgtxt2">With Wisconsin Dells, Portage and Sauk City not too far away, <br/> there are plenty of other accommodations in and around the Baraboo area.<br/>
+    </td>
+    <td>
+    </td>
+  </tr>  
+  <tr>
+    <td class="op bord">Ho-Chunk Casino Hotel
+    </td>
+    <td class="ba">Inn at Wawanissee Point Resort
+    </td>
+  </tr>
+  <tr>
+    <td class="cinfo bord">S3214 County Hwy BD Baraboo, WI 53913 <br/> 608.356.6210
+    </td>
+    <td class="rinfo">E13609 Tower Rd Baraboo, WI 53913 <br /> 608.355.9899
+    </td>
+  </tr>
+  <tr>
+    <td class="op bord">Cedarberry Inn
+    </td>
+    <td class="ba">Campus Inn Motel
+    </td>
+  </tr>
+  <tr>
+    <td class="cinfo bord">855 Phillips Boulevard Sauk City, WI 53583 <br/> 608.643.6625
+    </td>
+    <td class="rinfo">809 8th St, Hwy 33 Baraboo, WI 53913 <br/> 608.356.8366
+    </td>
+  </tr> 
+  <tr>
+    <td class="op bord">Log Lodge Motel & Cabins
+    </td>
+    <td class="ba">Ramada Wisconsin Dells
+    </td>
+  </tr>
+  <tr>
+    <td class="cinfo bord">830 W Pine St Baraboo, WI 53913 <br/> 608.356.6552
+    </td>
+    <td class="rinfo">1073 Frontage Rd E Wisconsin Dells, WI 53965 <br/> 608.254.2218
+    </td>
+  </tr>    
+  
+  
+</table>
+
+<a id="gift"></a>
+<a class="headline"><%= image_tag("gifts.png", alt: "where we are registered")  %></a>
+
+<table class="gftble">
+  <tr>
+  <td class="gftxt" colspan="2"><h2>We are registered at</h2>
+    </td>
+  <td>
+    </td>
+  </tr>
+  <tr>
+    <td class="gfimg bord"><%= link_to image_tag("targ2.png", alt: "Target"), "http://www.target.com/gift-registry/giftgiver?registryId=luJMAaGQej3vo4BONKmHlw&registryType=WEDDING", :target => "_blank" %>
+    </td>
+    <td class="gfimg"><%= link_to image_tag("Amazon2.jpg", alt: "Amazon dot com"), "http://www.amazon.com/gp/registry/wedding/ZA79O72PRSPW", :target => "_blank" %>
+    </td>
+  </tr>
+</table>
+<br/>
+
+<a id="party"></a>
+<a class="headline"><%= image_tag("ourfriends.png", alt: "Our wedding party")  %></a>
+
+<div id="carousel-generic" class="carousel slide" data-ride="carousel" data-interval="0">
+  <!-- Indicators -->
+ <!-- <ol class="carousel-indicators">
+    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-generic" data-slide-to="2"></li>
+  </ol> -->
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="phead">Cassandra Clark</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="thead">Thomas Wilz</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+      <%= image_tag("friends1.jpg", alt: "Cassandra Clark")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+       <%= image_tag("friends2.jpg", alt: "Thomas Wilz")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Some say she is a professional maid of honor. While this may or may not be true, she is very much my dearest and best friend.</p>
+        </td>
+        <td>
+       <p class="rcaption">Thomas has always been like a brother to me. He is my best man and my brother.</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="phead">Megan Thome</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="thead">Shea Curry</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("megan.jpg", alt: "Megan Thome")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("shea.jpg", alt: "Sheaftain Curry")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Some say that she only eats oranges when it's cold outside, and that she once saved a french mime from choking on a television remote control. All we know is that she's Megan!</p>
+        </td>
+        <td>
+       <p class="rcaption">What can be said about this man..</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="phead">Amanda Knoll</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="thead">Jason Hermes</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("amandak.jpg", alt: "Amanda Knoll")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("jason.jpg", alt: "Json")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Words</p>
+        </td>
+        <td>
+       <p class="rcaption">Har Har</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="phead">Jessica Robotka</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="thead">Henery Henkel</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("jessie.jpg", alt: "Sistah Jessie")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("henry.jpg", alt: "the who?")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Words</p>
+        </td>
+        <td>
+       <p class="rcaption">Har Har</p>
+        </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="item">
+       <table class="pttble">
+        <tr>
+        <td class="limage"><h2 class="phead">Amanda Buchholz</h2>
+        </td>
+        <td class="rimage">  
+        <h2 class="thead">Clarence Mcgivens</h2>
+        </td>
+        </tr>
+        <tr>
+        <td>
+         <a class="limage">
+           <%= image_tag("amandasaige.jpg", alt: "those two")  %>
+         </a>
+        </td>
+        <td>
+        <a class="rimage">
+          <%= image_tag("mcgivens.jpg", alt: "clarence")  %>
+        </a>         
+        </td>
+        </tr>
+        <tr>
+        <td>
+      <p class="lcaption">Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it </p>
+        </td>
+        <td>
+       <p class="rcaption">Har Har</p>
+        </td>
+        </tr>
+      </table>
+    </div>    
+    
+
+    
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+    <%= image_tag("lbutton.png", :class => "marrow icon-prev", alt: "reverse arrow")  %>
+  </a>
+  <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+    <%= image_tag("button.png", :class => "arrow icon-next", alt: "arrow")  %>
+  </a>
+</div> <!-- Carousel -->
+
+
+
+
 

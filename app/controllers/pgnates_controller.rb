@@ -1,4 +1,4 @@
-class PgnateController < ApplicationController
+class PgnatesController < ApplicationController
   
   def show
     @pgnate = Pgnate.find(params[:id])
@@ -21,7 +21,6 @@ class PgnateController < ApplicationController
   def index
     @post = Pgnate.paginate(:page => params[:page], :per_page => 20)
   end
-  
 
   private
 

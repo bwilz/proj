@@ -4,7 +4,7 @@ class CreatePgnates < ActiveRecord::Migration
       t.string :pname
       t.text :content
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end
