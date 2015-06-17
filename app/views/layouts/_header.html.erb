@@ -1,12 +1,13 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href=../#story class="page-scroll">Our Story</a></li>
-            <li><a href=../#day class="page-scroll">The Big Day</a></li>
-            <li><a href=../#lodge class="page-scroll">Lodging</a></li>
-            <li><a href=../#gift class="page-scroll">Registry</a></li>
-            <li><a href=../#party class="page-scroll">Wedding Party</a></li>
+          <ul class="nav navbar-nav navbar-right linker">
+            <li><a data-scroll href="../#kb" >K<span class="line">|</span>B</a></li>
+            <li><a data-scroll href="../#story" >Our Story</a></li>
+            <li><a data-scroll href="../#day" >The Big Day</a></li>
+            <li><a data-scroll href="../#lodge" >Lodging</a></li>
+            <li><a  data-scroll href="../#gift" >Registry</a></li>
+            <li><a  data-scroll href="../#party" >Wedding Party</a></li>
             <li><%= link_to "RSVP", rsvp_path %></li>
             <% if logged_in? %>
             <li class="dropdown">
