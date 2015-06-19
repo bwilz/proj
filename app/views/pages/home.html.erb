@@ -1,4 +1,11 @@
+    <script>
+    $(document).ready(function() {
+      $('ul.linker a').smoothScroll({offset: -40});
+    });
+
+  </script>
 <a id="kb"></a>
+
 <% provide(:title, 'Ben and Kassandra') %>
 <% provide(:b, "one")%>
 <a class="headline"><%= image_tag("headlineblock.png", alt: "headline")  %></a>
@@ -29,18 +36,23 @@
       <br/>We proceeded to dance the night away, and though we didn't speak much, there was definitely a sense of knowing between us. Two years later and we are living in Madison and writing sappy copy for our wedding website! Go on, I know you appreciate it.<br/>
       <br/>To conclude, I want to thank our beautiful family for all of the support over the years and giving me such a happy life. I am so excited to share our wedding day with you, and I really hope to see you in Baraboo!
       </p>
+      <br/>
+       <hr class="lblueline"/><div class="bqts"><span class="qts">“</span> Ben was instantly my<br/> best friend. I mean, when <br/> you know, you know. <span class="qts">”</span></div>
+    <hr class="lblueline"/>
     </td>
     <td>
-    <p class="gtxt">the groom, is old. Hates it when kids play in his lawn and skateboard on the damn sidewalks.</p>
+    <p class="gtxt">I grew up in the Village of Ogdensburg, which if you haven’t heard of, is smaller than Birchwood. If I can remember right, it only has one bar and one church. There is nothing to do. Everyone either goes to Waupaca, Iola/Scanndy or Manawa in order to escape. I left Ogdensburg for good in 2006 and became a resident of Madison from then on.<br/>
+     <br/>Before too long I ended up joining the Army and<br/> then attended classes toward a degree in web development, and after nearly six years of an uneventful life, a friend of mine asked if I would like to officiate his wedding.  I was a little hesitant at first, but I couldn’t let him down. This is why I found myself in Eagle River, of all places. I soon realized that my whole life had led me to that place, at that time, to meet someone special.<br/>
+      <br/>Kassandra and I, after a night of drink and dance, began messaging each other via a social media site.<br/> I was quite taken by our exchanges, but when she gave me her number in the form of Pokemon, I really knew for sure. We began talking for hours on end, seeing each other every weekend and taking trips to each other’s far away families. We moved in together, vacationed together and after 13 months I asked<br/> her to marry me.<br/>
+      <br/>I am so grateful for all of the love and support from our families as we take this next step in our lives.<br/> I can’t wait to see celebrate with everyone on<br/> August 15th!</p>
     </td>
   </tr>
   <tr>
     <td class="bord">
-      <hr class="lblueline"/><div class="bqts"><span class="qts">“</span> Ben was instantly my best friend. I mean, when you know, you know. <span class="qts">”</span></div>
-    <hr class="lblueline"/>
+   
     </td>
     <td>   
-    <hr class="rblueline"/><div class="gqts"><span class="qts">“</span> ...HUH?...WAT? <span class="qts">”</span></div>
+    <hr class="rblueline"/><div class="gqts"><span class="qts">“</span> Kassandra is the light of my life.<br/> My sun and my stars. <span class="qts">”</span></div>
     <hr class="rblueline"/>
     </td>
   </tr>
@@ -109,6 +121,13 @@
     <td class="cinfo bord">820 2nd Ave. Baraboo, WI 53913
     </td>
     <td class="rinfo">322 Water St. Baraboo, WI 53913
+    </td>
+  </tr>
+   <tr>
+    <td colspan="2" class="lgtxt">Ceromony begins at half past three in the afternoon.<br/>
+      Reception to follow.
+    </td>
+    <td>
     </td>
   </tr>
   <tr>
@@ -228,11 +247,17 @@
     <div class="item active">
       <table class="pttble">
         <tr>
-        <td class="limage"><h2 class="phead">Cassandra Clark</h2>
+        <td class="limage"><h2 class="phead" style="padding-left:1em">Cassandra Clark</h2>
         </td>
         <td class="rimage">  
-        <h2 class="thead">Thomas Wilz</h2>
+        <h2 class="thead" style="padding-right:1.5em">Thomas Wilz</h2>
         </td>
+        </tr>
+        <tr>
+          <td class="rp" style="padding-right:2em">Maid of Honor
+          </td>
+          <td class="lp" style="padding-left:1em">Best Man
+          </td>
         </tr>
         <tr>
         <td>
@@ -242,16 +267,16 @@
         </td>
         <td>
         <a class="rimage">
-       <%= image_tag("friends2.jpg", alt: "Thomas Wilz")  %>
+       <%= image_tag("tom.jpg", alt: "Thomas Wilz")  %>
         </a>         
         </td>
         </tr>
         <tr>
         <td>
-      <p class="lcaption">Some say she is a professional maid of honor. While this may or may not be true, she is very much my dearest and best friend.</p>
+      <p class="lcaption">There are rumors that she runs with wild emus on special occasions.  While this may or may not be true, she is very much my dearest and oldest friend. I have never met anyone nearly as selfless, and with that merit, she deserves all of the awesome things.  I am honored to have her as my maid of honor. </p>
         </td>
         <td>
-       <p class="rcaption">Thomas has always been like a brother to me. He is my best man and my brother.</p>
+       <p class="rcaption">Thomas has always been like a brother to me. He is my best man and my brother. His best man speech will be the best ever. Star Wars, Legos, Computer Games /thread</p>
         </td>
         </tr>
       </table>
@@ -259,11 +284,17 @@
     <div class="item">
        <table class="pttble">
         <tr>
-        <td class="limage"><h2 class="phead">Megan Thome</h2>
+        <td class="limage"><h2 class="phead" style="padding-left:1.3em">Megan Thome</h2>
         </td>
         <td class="rimage">  
         <h2 class="thead">Shea Curry</h2>
         </td>
+        </tr>
+         <tr>
+          <td class="rp" style="padding-right:2em">Bidesmaid
+          </td>
+          <td class="lp" style="padding-left:1.25em">Groomsman
+          </td>
         </tr>
         <tr>
         <td>
@@ -282,7 +313,7 @@
       <p class="lcaption">Some say that she only eats oranges when it's cold outside, and that she once saved a french mime from choking on a television remote control. All we know is that she's Megan!</p>
         </td>
         <td>
-       <p class="rcaption">What can be said about this man..</p>
+       <p class="rcaption">What can be said about this man...Shea has been my friend for years. Without him my life and the lives of many others would be a dreadful bore.</p><br/><br/>
         </td>
         </tr>
       </table>
@@ -290,11 +321,17 @@
     <div class="item">
        <table class="pttble">
         <tr>
-        <td class="limage"><h2 class="phead">Amanda Knoll</h2>
+        <td class="limage"><h2 class="phead" style="padding-left:1.8em">Amanda Knoll</h2>
         </td>
         <td class="rimage">  
-        <h2 class="thead">Jason Hermes</h2>
+        <h2 class="thead" style="padding-right:.5em">Jason Hermes</h2>
         </td>
+        </tr>
+          <tr>
+          <td class="rp" style="padding-right:2em">Bidesmaid
+          </td>
+          <td class="lp" style="padding-left:1em">Groomsman
+          </td>
         </tr>
         <tr>
         <td>
@@ -304,16 +341,16 @@
         </td>
         <td>
         <a class="rimage">
-          <%= image_tag("jason.jpg", alt: "Json")  %>
+          <%= image_tag("json.jpg", alt: "Json")  %>
         </a>         
         </td>
         </tr>
         <tr>
         <td>
-      <p class="lcaption">Words</p>
+      <p class="lcaption">Amanda has been my partner in crime throughout college. I can honestly say I have never made friends with anyone as quickly as this one, or pick up where we left off so easily. Since the good ole days, she has been living in the middle of the woods making a bunch of neat bird friends. </p>
         </td>
         <td>
-       <p class="rcaption">Har Har</p>
+       <p class="rcaption">Even before becoming my brother, Jason has always been a great inspiration in my life. Over the years we experienced fun and exciting times together and his ability to take life by the horns has always encouraged me to do the same.</p>
         </td>
         </tr>
       </table>
@@ -321,11 +358,17 @@
     <div class="item">
        <table class="pttble">
         <tr>
-        <td class="limage"><h2 class="phead">Jessica Robotka</h2>
+        <td class="limage"><h2 class="phead" style="padding-left:1.7em">Jessica Robotka</h2>
         </td>
         <td class="rimage">  
         <h2 class="thead">Henery Henkel</h2>
         </td>
+        </tr>
+          <tr>
+          <td class="rp" style="padding-right:2em">Bidesmaid
+          </td>
+          <td class="lp" style="padding-left:1em">Groomsman
+          </td>
         </tr>
         <tr>
         <td>
@@ -341,10 +384,10 @@
         </tr>
         <tr>
         <td>
-      <p class="lcaption">Words</p>
+      <p class="lcaption">This sister of mine is the reason I always made it to the dentist on time. She can frequently be spotted in greenhouses, helping the sick animals, and giving all of the best advice. But my most favorite thing is that we both share a love for classic Spyro and other nerdy games of nerdom. </p>
         </td>
         <td>
-       <p class="rcaption">Har Har</p>
+       <p class="rcaption">Though he’s fairly elusive, I have witnessed this man drive several hours to spend time with a friend at the drop of a hat. Only to turn around and drive back a few hours later. Henry has been a dear friend for years and I only regret that we don’t see each other more often.</p>
         </td>
         </tr>
       </table>
@@ -353,11 +396,17 @@
     <div class="item">
        <table class="pttble">
         <tr>
-        <td class="limage"><h2 class="phead">Amanda Buchholz</h2>
+        <td class="limage"><h2 class="phead" style="padding-left:.5em">Amanda & Saige Buchholz</h2>
         </td>
         <td class="rimage">  
-        <h2 class="thead">Clarence Mcgivens</h2>
+        <h2 class="thead" style="padding-right:.5em">Clarence Mcgivens</h2>
         </td>
+        </tr>
+          <tr>
+          <td class="rp" style="padding-right:2em">Bidesmaid
+          </td>
+          <td class="lp" style="padding-left:1em">Groomsman
+          </td>
         </tr>
         <tr>
         <td>
@@ -373,10 +422,10 @@
         </tr>
         <tr>
         <td>
-      <p class="lcaption">Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it Words this is a bunch of random nonsense dont even waste your time reading it </p>
+      <p class="lcaption">Even though she used to torture me deep into the night with tales of the hook man, and pretended to be eaten by a closet, I still love and accept her as my sister. Now she has someone new to tease, her lovely daughter (and our own flower girl) Saige.</p>
         </td>
         <td>
-       <p class="rcaption">Har Har</p>
+       <p class="rcaption">Clarence Jeffery Mcgivens. Man or legend? I have had the luck of living and traveling across the country with this great man, a true friend. From what I can tell, I’ve witnessed less than half of the adventures this man will embark on.</p><br/>
         </td>
         </tr>
       </table>
@@ -396,6 +445,17 @@
 </div> <!-- Carousel -->
 
 
-
+<div>
+<table class="ferdinand">
+  <tr>
+    <td>
+    </td>
+    <td>Site Designed By Kassandra - Coded by Benjamin
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
+</div>
 
 
