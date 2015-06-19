@@ -14,6 +14,10 @@ gem 'will_paginate',        '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'betterlorem',          '0.1.2'
 gem 'jquery-smooth-scroll-rails', '0.0.5'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-rbenv', '~> 2.0', require: false
+gem 'mysql2'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
@@ -29,7 +33,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
   gem 'puma',           '2.11.1'
 end
