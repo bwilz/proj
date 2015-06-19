@@ -35,7 +35,7 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 # set :keep_releases, 5
 
 # config valid only for Capistrano 3.1
-lock '3.2.1'
+lock '3.4.0'
 
 set :application, 'proj'
 set :repo_url, 'git@github.com:bwilz/proj.git'
