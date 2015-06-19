@@ -17,7 +17,6 @@ gem 'jquery-smooth-scroll-rails', '0.0.5'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'capistrano-rbenv', '~> 2.0', require: false
-gem 'mysql2'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
@@ -35,4 +34,5 @@ end
 group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma',           '2.11.1'
+  gem 'mysql2'
 end
