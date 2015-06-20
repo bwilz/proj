@@ -3,7 +3,7 @@
 lock '3.4.0'
 
 set :application, 'proj'
-set :repo_url, 'git@github.com:bwilz/proj.git'
+set :repo_url, 'git@github.com:bwilz/proj'
 set :rbenv_ruby, '2.2.2'
 
 # Default branch is :master
