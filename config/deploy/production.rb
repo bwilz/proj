@@ -7,6 +7,6 @@ server '45.33.1.219', user: 'deploy', roles: %w{web app}
 
 set :ssh_options, {
     keys: %w(/home/action/.ssh/id_rsa),
-    forward_agent: true,
+  forward_agent: false,
     user: 'deploy'
   }
